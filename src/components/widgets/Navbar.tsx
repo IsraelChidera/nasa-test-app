@@ -1,15 +1,21 @@
+import { Link } from 'react-router-dom';
 import Button from '../elements/Button';
+import Container from '../elements/Container';
 
 const Navbar = () => {
     return (
-        <nav className="h-[10vh] pt-6 ">
-            <div className="flex justify-between items-center">
-                <img src="/logo.png" alt="nasa logo" className='block w-[90px]' />
+        <nav className="pt-6 ">
+            <Container>
+                <div className="flex justify-between items-center">
+                    <img src="/logo.png" alt="nasa logo" className='block w-[90px]' />
 
-                <Button className="">
-                    See more
-                </Button>
-            </div>
+                    <Link to="/picture-of-the-day">
+                        <Button>
+                            Get started
+                        </Button>
+                    </Link>
+                </div>
+            </Container>
         </nav>
     )
 }
