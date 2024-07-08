@@ -11,7 +11,7 @@ const Navbar = () => {
 
                     <Link to="/picture-of-the-day">
                         <Button className='lg:text-base text-xs md:text-sm'>
-                            Get started
+                            Get APOD
                         </Button>
                     </Link>
                 </div>
