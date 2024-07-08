@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Navbar from '../components/widgets/Navbar';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -33,10 +34,10 @@ const Home = () => {
                         <div className=' h-full '>
                             <div className='flex justify-center items-center h-[90vh]'>
                                 <div>
-                                    <h1 style={{ textShadow: "1px 1px 2px #334" }} className='text-white text-center text-[114px] drop-shadow-md font-bold'>Space X</h1>
+                                    <h1 style={{ textShadow: "1px 1px 2px #334" }} className='text-white text-center text-3xl md:text-[114px] drop-shadow-md font-bold'>Space X</h1>
 
                                     <div className='flex items-center justify-center'>
-                                        <p style={{ textShadow: "1px 1px 2px #334" }} className='w-[600px] text-center font-bold text-lg text-white'>
+                                        <p style={{ textShadow: "1px 1px 2px #334" }} className='lg:w-[600px] text-center font-bold text-sm lg:text-lg text-white'>
                                             SpaceX is an American aerospace manufacturer, a provider of space
                                             transportation services, and a communications corporation
                                             headquartered in Hawthorne, California. SpaceX was founded in 2002
@@ -46,9 +47,11 @@ const Home = () => {
                                     </div>
 
                                     <div className='flex justify-center mt-4'>
-                                        <Button className="">
-                                            Get picture of the day
-                                        </Button>
+                                        <Link to="/picture-of-the-day">
+                                            <Button className="lg:text-base text-sm">
+                                                Get picture of the day
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -61,13 +64,13 @@ const Home = () => {
                                 <div>
                                     <h1
                                         style={{ textShadow: "1px 1px 2px #334" }}
-                                        className='text-white text-center text-[114px] drop-shadow-md font-bold'
+                                        className='text-white text-center text-3xl md:text-[114px] drop-shadow-md font-bold'
                                     >
                                         NASA
                                     </h1>
 
                                     <div className='flex items-center justify-center'>
-                                        <p style={{ textShadow: "1px 1px 2px #334" }} className='w-[600px] text-center font-bold text-lg text-white'>
+                                        <p style={{ textShadow: "1px 1px 2px #334" }} className='lg:w-[600px] text-center font-bold text-sm lg:text-lg text-white'>
                                             NASA, the National Aeronautics and Space Administration, is an independent
                                             agency of the U.S. federal government responsible for the civilian space
                                             program, as well as aeronautics and space research. Founded in 1958,
@@ -78,7 +81,7 @@ const Home = () => {
                                     </div>
 
                                     <div className='flex justify-center mt-4'>
-                                        <Button className="">
+                                        <Button className="text-sm lg:text-base">
                                             Get picture of the day
                                         </Button>
                                     </div>
@@ -93,7 +96,7 @@ const Home = () => {
                                 <div>
                                     <h1
                                         style={{ textShadow: "1px 1px 2px #334" }}
-                                        className='text-white text-center text-[114px] drop-shadow-md font-bold'
+                                        className='text-white text-center text-3xl md:text-[114px] drop-shadow-md font-bold'
                                     >
                                         Space Adventures
                                     </h1>
@@ -101,7 +104,7 @@ const Home = () => {
                                     <div className='flex items-center justify-center'>
                                         <p
                                             style={{ textShadow: "1px 1px 2px #334" }}
-                                            className='w-[600px] text-center font-bold text-lg text-white'
+                                            className='lg:w-[600px] text-center font-bold text-sm lg:text-lg text-white'
                                         >
                                             Space Adventures is an American space tourism company that offers various
                                             spaceflight experiences to private individuals. Founded in 1998 and
@@ -113,7 +116,7 @@ const Home = () => {
                                     </div>
 
                                     <div className='flex justify-center mt-4'>
-                                        <Button className="">
+                                        <Button className="text-sm lg:text-base">
                                             Get picture of the day
                                         </Button>
                                     </div>

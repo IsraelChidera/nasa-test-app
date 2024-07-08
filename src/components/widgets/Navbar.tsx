@@ -7,10 +7,10 @@ const Navbar = () => {
         <nav className="pt-6 ">
             <Container>
                 <div className="flex justify-between items-center">
-                    <img src="/logo.png" alt="nasa logo" className='block w-[90px]' />
+                    <img src="/logo.png" alt="nasa logo" className='block w-[60px] lg:w-[90px]' />
 
                     <Link to="/picture-of-the-day">
-                        <Button>
+                        <Button className='lg:text-base text-xs md:text-sm'>
                             Get started
                         </Button>
                     </Link>
