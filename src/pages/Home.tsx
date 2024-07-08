@@ -34,7 +34,7 @@ const Home = () => {
                         <div className=' h-full '>
                             <div className='flex justify-center items-center h-[90vh]'>
                                 <div>
-                                    <h1 style={{ textShadow: "1px 1px 2px #334" }} className='text-white text-center text-3xl md:text-[114px] drop-shadow-md font-bold'>Space X</h1>
+                                    <h1 style={{ textShadow: "1px 1px 2px #334" }} className='text-white text-center text-3xl md:text-6xl drop-shadow-md font-bold'>Space X</h1>
 
                                     <div className='flex items-center justify-center'>
                                         <p style={{ textShadow: "1px 1px 2px #334" }} className='lg:w-[600px] text-center font-bold text-sm lg:text-lg text-white'>
@@ -64,7 +64,7 @@ const Home = () => {
                                 <div>
                                     <h1
                                         style={{ textShadow: "1px 1px 2px #334" }}
-                                        className='text-white text-center text-3xl md:text-[114px] drop-shadow-md font-bold'
+                                        className='text-white text-center text-3xl md:text-6xl drop-shadow-md font-bold'
                                     >
                                         NASA
                                     </h1>
@@ -96,7 +96,7 @@ const Home = () => {
                                 <div>
                                     <h1
                                         style={{ textShadow: "1px 1px 2px #334" }}
-                                        className='text-white text-center text-3xl md:text-[114px] drop-shadow-md font-bold'
+                                        className='text-white text-center text-3xl md:text-6xl drop-shadow-md font-bold'
                                     >
                                         Space Adventures
                                     </h1>
