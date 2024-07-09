@@ -55,8 +55,9 @@ const PictureOfTheDay = () => {
       setLoading(true);
       const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${key}&start_date=${date}&end_date=${date}`);
       console.log("date response", response?.data[0]);
-      setSelectedDateData(response?.data[0]); // Assuming the API returns an array
+      setSelectedDateData(response?.data[0]);       
       setModalIsOpen(true);
+
     } catch (e: unknown) {
       console.log("error: ", e);
       setErrors("An error occurred while fetching the picture for the selected date");
@@ -98,6 +99,7 @@ const PictureOfTheDay = () => {
                     className={`block w-full py-2 pl-10 pr-4 appearance-none bg-transparent border-0 border-transparent rounded-lg text-gray-900 ring-0 ring-inset ring-transparent focus:ring-0 focus:ring-inset focus:ring-transparent text-xs sm:leading-6 outline-none caret-gray-300`}
                     onChange={(date: any) => {
                       const formattedDate = date.toISOString().split('T')[0];
+                      setSelectedDate(formattedDate);
                       getPictureByDate(formattedDate);
                     }}
                   />
@@ -166,7 +168,7 @@ const PictureOfTheDay = () => {
 
 
             <div className='bg-white rounded-md p-4 bg-opacity-[2%] text-white mt-6'>
-              <p className="text-center text-sm">APOD on this day - {pictureOfTheDay?.date} </p>
+              <p className="text-center text-sm">APOD on this day - {selectedDateData?.date} </p>
               <h2 className='mb-1 text-center text-xl md:text-3xl'>
                 {selectedDateData?.title}
               </h2>
