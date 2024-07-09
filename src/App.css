@@ -10,12 +10,35 @@ html {
   scroll-behavior: smooth;
 }
 
-body {  
-  line-height: 1.6;  
+body {
+  line-height: 1.6;
   list-style: none;
   font-family: "Righteous", sans-serif;
 }
 
 .swiper1-bg {
   background: url('../public/swiper1bg.png') no-repeat;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: orange;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
