@@ -3,6 +3,12 @@
   "compilerOptions": {
     "esModuleInterop": true,
   },
+  "baseUrl": ".",
+  "paths": {
+    "@app/*": [
+      "src/*"
+    ]
+  },
   "references": [
     {
       "path": "./tsconfig.app.json"
